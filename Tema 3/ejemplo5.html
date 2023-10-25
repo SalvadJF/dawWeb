@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 5</title>
+</head>
+
+<body>
+    <select>
+        <optgroup label="Frutas">
+            <option value="manzana">Manzana</option>
+            <option value="naranja">Naranja</option>
+            <option value="platano">Plátano</option>
+        </optgroup>
+        <optgroup label="Verduras">
+            <option value="zanahoria">Zanahoria</option>
+            <option value="brocoli">Brócoli</option>
+            <option value="espinaca">Espinaca</option>
+        </optgroup>
+    </select>
+    <label for="frutas">Selecciona una fruta:</label>
+    <input list="frutas" id="fruta" name="fruta" />
+    <datalist id="frutas">
+        <option value="Manzana"></option>
+        <option value="Banana"></option>
+        <option value="Naranja"></option>
+        <option value="Uva"></option>
+        <option value="Pera"></option>
+    </datalist>
+</body>
+
+</html>
