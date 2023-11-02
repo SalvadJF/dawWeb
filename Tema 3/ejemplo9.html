@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo9</title>
+    <style>
+        p {
+            background-color: grey;
+        }
+
+        /* Selector etiqueta */
+        .clase {
+            color: red;
+        }
+
+        /* Selector clase */
+        #ident {
+            color: green;
+        }
+
+        /* Selector identificador */
+        * {
+            font-style: italic;
+        }
+
+        /* Selector universal */
+        p a {
+            background-color: orange;
+        }
+
+        /* Selector descendiente
+            (pueden ser hijos de hijos) */
+        h3,
+        small {
+            color: blue;
+        }
+
+        /* Combinación de selectores */
+        div>span {
+            color: pink;
+        }
+
+        /* Selector de hijos (no pueden ser
+            hijos de hijos) */
+        span+small {
+            background-color: yellow;
+        }
+
+        /* Selector
+            adyacente */
+    </style>
+</head>
+
+<body>
+    <h1 class="clase">Texto de color rojo</h1>
+    <p id="ident">Texto de color verde</p>
+    <h2>Selector descendiente</h2>
+    <p>
+        <a href="#">Enlace</a><br>
+        <span>
+            <a href="#">Enlace</a>
+        </span>
+    </p>
+    <h3>Texto h3</h3>
+    <div>
+        <span>Texto con span</span>
+        <small> Texto con small</small>
+        <span>Texto con span</span>
+        <small> Texto con small</small>
+        <small> Texto con small</small>
+    </div>
+
+</body>
+
+</html>
