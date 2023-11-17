@@ -1,16 +1,15 @@
-
 body {
     background-color: #535353;
+    margin: 0; /* Agregado para eliminar el espacio de margen predeterminado del body */
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: "Roboto", Arial,
-        Tahoma, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, Tahoma, sans-serif;
+    box-sizing: border-box; /* Agregado para incluir el padding y el borde en el tamaño total */
 }
 
-/* Header and Nav */
 header {
     position: fixed;
     width: 100%;
@@ -20,24 +19,15 @@ header {
 
 nav {
     max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
-}
-
-header img {
-    padding: 18px 10px;
-}
-
-nav ul {
-    float: right;
-    list-style: none;
-    text-align: center;
-    vertical-align: top;
-    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav li {
-    list-style-type: none;
-    display: inline;
+    display: inline-block; /* Cambiado de block a inline-block */
 }
 
 nav li a {
@@ -48,9 +38,76 @@ nav li a {
     color: black;
     background-color: white;
     border: 1px solid grey;
+    border-radius: 5px; /* Agregado para bordes redondeados */
+    display: inline-block; /* Añadido para alinear verticalmente */
 }
 
 nav li a:hover {
     color: white;
     background-color: black;
+}
+
+
+.usuarioBoton {
+    position: relative;
+}
+
+.usuarioBoton a {
+    display: block;
+    background: white;
+    border: none;
+    border-radius: 5px; /* Agregado para bordes redondeados */
+}
+
+.iconoCorp {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.iconoCorp img {
+    padding: 5px;
+}
+
+.menuBoton {
+    position: relative;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
+.desplegableBoton {
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px; /* Agregado para bordes redondeados */
+}
+
+.menuBoton img {
+    width: 30px;
+    height: 30px; 
+}
+
+.menuOpciones {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    text-align: center;
+    width: 100%; /* Cambiado de 200px a 100% */
+    background-color: black; /* Cambia el color de fondo a negro */
+    color: white; /* Cambia el color del texto a blanco */
+    padding: 10px; /* Añade un espacio alrededor de las opciones */
+    border-radius: 5px; /* Agregado para bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregado para sombra */
+}
+
+.menuOpciones li {
+    display: block;
+}
+
+
+/* Muestra el menú desplegable al pasar por encima del botón de opciones */
+.menuBoton:hover .menuOpciones, .menuBoton:focus-within .menuOpciones {
+    display: block;
 }
