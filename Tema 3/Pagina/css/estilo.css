@@ -6,15 +6,16 @@ body {
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", Arial, Tahoma, sans-serif;
+    font-family: 'Inria Serif', 'Inter Bold', Lato;
     box-sizing: border-box; /* Agregado para incluir el padding y el borde en el tamaño total */
 }
 
+/* Contenido del Header */
 header {
     position: fixed;
     width: 100%;
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav {
@@ -24,6 +25,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav img {
+
+    width: 40px;
+    height: 40px;
+
 }
 
 nav li {
@@ -47,6 +55,13 @@ nav li a:hover {
     background-color: black;
 }
 
+nav #imagenCorporativa {
+
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+}
+
 
 .usuarioBoton {
     position: relative;
@@ -56,17 +71,26 @@ nav li a:hover {
     display: block;
     background: white;
     border: none;
-    border-radius: 5px; /* Agregado para bordes redondeados */
+    border-radius: 5px; 
+    width: 40px;
+    height: 40px;
+
 }
 
 .iconoCorp {
-    flex-grow: 1;
+    display: block;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.iconoCorp #imagenCorporativa {
+
     text-align: center;
 }
 
-.iconoCorp img {
-    padding: 5px;
-}
 
 .menuBoton {
     position: relative;
@@ -111,3 +135,104 @@ nav li a:hover {
 .menuBoton:hover .menuOpciones, .menuBoton:focus-within .menuOpciones {
     display: block;
 }
+
+/* Contenido del Main */
+
+section {
+
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+
+
+    
+}
+
+.portada{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/cielo.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 0px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), url(../img/cielo.jpg));
+}
+
+    #imagenCorporativa {
+
+        font-family: geostar;
+        font-weight: bold;
+        font-size: 110px;
+        color: #f00;
+        -webkit-text-stroke: 4px black;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    #titulos {
+
+        font-family: inter;
+        background: linear-gradient(to left, #d37b7b, #ce3f3f);
+        color: transparent;
+        font-size: 40px;
+        text-align: bottom;
+        -webkit-background-clip: text;
+
+    }
+
+.noticias {
+
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+
+}
+
+.noticias #rotulo {
+
+    margin: auto;
+    padding: 5px;
+}
+ 
+    #rotulo {
+
+        font-family: inter;
+        color: yellow;
+        font-size: 40px;
+    }
+
+    #noticia1, #noticia2 {
+
+        display: inline-block;
+        background: gray;
+        border: none;
+        width: 33%;
+        height: 350px;
+    }
+
+    #noticia1 img {
+
+        width: auto;
+        padding: auto;
+    }
+
+    #noticia1 img {
+
+        width: auto;
+    }
+
+    #noticiasAntiguas {
+
+        display: inline-block;
+        width: 33%;
+        height: 350px;
+    }
+
+
+
+
+
