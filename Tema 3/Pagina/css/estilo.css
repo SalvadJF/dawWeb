@@ -1,16 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", Arial,
+        Tahoma, sans-serif;
+}
+
 body {
     background-color: #535353;
-    margin: 0; /* Agregado para eliminar el espacio de margen predeterminado del body */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inria Serif', 'Inter Bold', Lato;
-    box-sizing: border-box; /* Agregado para incluir el padding y el borde en el tamaño total */
-}
-
-/* Contenido del Header */
+/* Header and Nav */
 header {
     position: fixed;
     width: 100%;
@@ -20,22 +19,40 @@ header {
 
 nav {
     max-width: 1024px;
-    width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-nav img {
+nav button {
+    font-size: 1em; /* Set the font size to match the anchor elements */
+    height: 70px; /* Set the height to match the line height of the anchor elements */
+    width: 100px;
+    padding: 10px 10px; /* Add padding to the button as needed */
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
 
-    width: 40px;
-    height: 40px;
+nav p #botonCorp {
+    font-family: geostar;
+    font-weight: bold;
+    color: #f00;
+    -webkit-text-stroke: 4px black;
+    text-align: left;
+    margin-left: 50px;
+  }
 
+nav ul {
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 10px;
 }
 
 nav li {
-    display: inline-block; /* Cambiado de block a inline-block */
+    list-style-type: none;
+    display: inline;
 }
 
 nav li a {
@@ -46,8 +63,6 @@ nav li a {
     color: black;
     background-color: white;
     border: 1px solid grey;
-    border-radius: 5px; /* Agregado para bordes redondeados */
-    display: inline-block; /* Añadido para alinear verticalmente */
 }
 
 nav li a:hover {
@@ -55,101 +70,21 @@ nav li a:hover {
     background-color: black;
 }
 
-nav #imagenCorporativa {
-
-    font-size: 40px;
-    text-align: center;
-    -webkit-text-stroke: 2px black;
+nav li img {
+    max-height: 40px; 
+    max-width: 40px; 
+    vertical-align: middle; 
 }
 
-
-.usuarioBoton {
-    position: relative;
-}
-
-.usuarioBoton a {
-    display: block;
-    background: white;
-    border: none;
-    border-radius: 5px; 
-    width: 40px;
-    height: 40px;
-
-}
-
-.iconoCorp {
-    display: block;
-    background: white;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    
-}
-
-.iconoCorp #imagenCorporativa {
-
-    text-align: center;
-}
-
-
-.menuBoton {
-    position: relative;
-    display: flex;
-    align-items: center; /* Alinea verticalmente el contenido */
-}
-
-.desplegableBoton {
-    background: white;
-    border: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px; /* Agregado para bordes redondeados */
-}
-
-.menuBoton img {
-    width: 30px;
-    height: 30px; 
-}
-
-.menuOpciones {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    list-style: none;
-    text-align: center;
-    width: 100%; /* Cambiado de 200px a 100% */
-    background-color: black; /* Cambia el color de fondo a negro */
-    color: white; /* Cambia el color del texto a blanco */
-    padding: 10px; /* Añade un espacio alrededor de las opciones */
-    border-radius: 5px; /* Agregado para bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregado para sombra */
-}
-
-.menuOpciones li {
-    display: block;
-}
-
-
-/* Muestra el menú desplegable al pasar por encima del botón de opciones */
-.menuBoton:hover .menuOpciones, .menuBoton:focus-within .menuOpciones {
-    display: block;
-}
-
-/* Contenido del Main */
+/* Main */
 
 section {
-
     margin: 0px;
     padding: 0px;
     border: 0;
-
-
-    
-}
-
-.portada{
-
+  }
+  
+  .portada {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -159,80 +94,146 @@ section {
     background-size: cover;
     background-position: center;
     border: 0px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), url(../img/cielo.jpg));
-}
+  }
+  
+  .portada #imagenCorporativa {
+    font-family: geostar;
+    font-weight: bold;
+    font-size: 110px;
+    color: #f00;
+    -webkit-text-stroke: 4px black;
+    text-align: left;
+    margin-left: 50px;
+  }
+  
+  .portada #titulos {
+    font-family: inter;
+    background: linear-gradient(to left, #d37b7b, #ce3f3f);
+    color: transparent;
+    font-size: 40px;
+    text-align: bottom;
+    -webkit-background-clip: text;
+  }
+  
 
-    #imagenCorporativa {
-
-        font-family: geostar;
-        font-weight: bold;
-        font-size: 110px;
-        color: #f00;
-        -webkit-text-stroke: 4px black;
-        text-align: left;
-        margin-left: 50px;
-    }
-
-    #titulos {
-
-        font-family: inter;
-        background: linear-gradient(to left, #d37b7b, #ce3f3f);
-        color: transparent;
-        font-size: 40px;
-        text-align: bottom;
-        -webkit-background-clip: text;
-
-    }
-
+/* Noticias */
 .noticias {
-
-    width: 100%;
-    height: 100px;
+    margin-top: 20px;
     padding: 20px;
-
 }
 
-.noticias #rotulo {
+.noticias h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: yellow;
+}
 
-    margin: auto;
+.noticiasTablas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+
+.noticiasTablas table {
+    width: 30%; 
+    background-color: #eee;
+    margin-right: 30px;
+}
+
+.imagenNoticias {
+
+    width: 30%;
+}
+
+.noticiasFin {
+    text-align: center;
+}
+
+.noticiasFin button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.noticiasFin button:hover {
+    background-color: #333;
+}
+
+/* Portada de Articulos */
+
+/* Portada de Artículos */
+.portadaArticulos {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.portadaArticulos h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+/* Portada de Tendencias */
+.portadaTendencias {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.portadaTendencias div {
+    width: 23%; /* 25% - 2% margin */
+    background-size: cover;
+    background-position: center;
+    background-color: #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portadaTendencias table {
+    width: 100%;
+    height: 100%;
+}
+
+.portadaTendencias table img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.imagenUsuario {
+
+    max-height: 40px; 
+    max-width: 40px; 
+    vertical-align: middle; 
+}
+
+.portadaTendencias .cuadradoGris {
+    background-color: #888;
+    color: #fff;
     padding: 5px;
+    text-align: center;
 }
- 
-    #rotulo {
 
-        font-family: inter;
-        color: yellow;
-        font-size: 40px;
-    }
+.portadaTendencias .Likes button,
+.portadaTendencias .Favoritos button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
-    #noticia1, #noticia2 {
+.portadaTendencias .Likes button::before {
+    content: "\2764"; /* Unicode heart symbol */
+    font-size: 24px;
+    color: red;
+}
 
-        display: inline-block;
-        background: gray;
-        border: none;
-        width: 33%;
-        height: 350px;
-    }
-
-    #noticia1 img {
-
-        width: auto;
-        padding: auto;
-    }
-
-    #noticia1 img {
-
-        width: auto;
-    }
-
-    #noticiasAntiguas {
-
-        display: inline-block;
-        width: 33%;
-        height: 350px;
-    }
-
-
-
-
-
+.portadaTendencias .Favoritos button::before {
+    content: "\2605"; /* Unicode star symbol */
+    font-size: 24px;
+    color: gold;
+}
