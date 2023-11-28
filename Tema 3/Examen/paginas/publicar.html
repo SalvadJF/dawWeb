@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar</title>
+    <link rel="stylesheet" href="../css/estilos.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../img/Logo_blau_uoc.png" alt="logo universidad"></a>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="http://openaccess.uoc.edu/webapps/o2/?locale=es">Buscar</a></li>
+                <li><a href="./paginas/publicar.html">Publicar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="espacio"></div>
+        <section class="formularioPublicacion">
+            <form action="">
+                <fieldset>
+                    <legend>Datos de la publicacion</legend>
+                    <label name="nombreAutor">Nombre del autor</label>
+                    <input type="text" id="nombreAutor" required>
+                    <label name="apellidoAutor">Primer apellido del autor </label>
+                    <input type="text" id="apellidoAutor" required>
+                    <label name="segundoApellido">Segundo apellido del autor </label>
+                    <input type"text" id="segundoApellido2" required>
+                    <label name="tituloDocumento"> Titulo del documento</label>
+                    <input type="text" id="tituloDocumento" required>
+                    <label name="fechaCreacion">Fecha de Creacion del documento</label>
+                    <input type="date" id="fechaCreacion" required>
+                    <label name="editorial">Editorial</label>
+                    <select id="editorial">
+                        <option value="Catalunya">Universitat Oberta de Catalunya</option>
+                    </select>
+                    <label name="tipoDocumento">Tipo de Documento</label>
+                    <select id="tipoDocumento" required>
+                        <option value="articulo">Articulo</option>
+                        <option value="trabajofinCarrera">Trabajo fin de carrera</option>
+                        <option value="trabajofinMaster">Trabajo fin de master</option>
+                        <option value="tesisDoctoral">Tesis doctoral</option>
+                    </select>
+                    <label name="breveResumen">Breve resumen del documento</label>
+                    <textarea id="breveResumen"></textarea>
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </section>
+        <div class="espacio"></div>
+        <section class="formularioContacto">
+            <form action="">
+                <fieldset>
+                    <legend>Datos de contacto del remitente</legend>
+                    <label name="nombreApellidos">Nombre y Apellidos</label>
+                    <input type="text" id="nombreApellidos" required>
+                    <label name="sexo">Por favor seleccione una de las dos opciones siguientes:</label>
+                    <select id="sexo">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                    <label name="documentoIdentidad">Tipo de Documento de identidad</label>
+                    <select id="documentoIdentidad" required>
+                        <option value="nif">NIF</option>
+                        <option value="nie">NIE</option>
+                        <option value="pass">PASS</option>
+                    </select>
+                    <label name="numeroDocumento">Numero del Documento</label>
+                    <input type="text" id="numeroDocumento" required>
+                    <label name="correo">Correo electronico</label>
+                    <input type="email" id="correo" required>
+                    <label name="telefono">Telefono (opcional)</label>
+                    <input type="number" id="telefono">
+                    <label name="idiomaRespuesta">Idioma para la respuesta</label>
+                    <select id="idiomaRespuesta" required>
+                        <option value="castellano">Castellano</option>
+                        <option value="catalan">Catalan</option>
+                    </select>
+                    <label name="condiciones">He leido y acepto la politica de privacidad y el aviso legal</label>
+                    <input type="checkbox" id="condiciones" required>
+                    <label name="informado">Dese ser informado sobre las nuevas incorporaciones al repositorio</label>
+                    <input type="checkbox" id="informado">
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </section>
+        <div class="espacio"></div>
+
+    </main>
+    <footer>
+        <p>Actividad realizada por Salvador Jimenez Fernandez, para la asignatura HTML y CSS</p>
+        <p>2ª DAW 2023-2024</p>
+
+    </footer>
+
+</body>
+
+</html>
