@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Salvador Jimenez Fernandez 2ºDAW</title>
     <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/ttt.js"></script>
 </head>
 
 <body>
@@ -17,16 +18,23 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="articulo.html">Articulo</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <li><span onclick="abrirNav()">&#9776;</span></li>
             </ul>
+            <div id="navegadorLateral" class="menuLateral">
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+                <a href="index.html">Inicio</a>
+                <a href="articulo.html">Articulo</a>
+                <a href="contacto.html">Contacto</a></li>
+              </div>
         </nav>
     </header>
     <main>
         <section class="portada">
             <div>
-                <h2 id="imagenCorporativa">TTT</h2>
+                <h2 class="imagenCorporativa">TTT</h2>
             </div>
             <div>
-                <h2 id="titulos">| Modelos y Texturas 3D</h2>
+                <h2 class="titulos">| Modelos y Texturas 3D</h2>
             </div>
         </section>
         <section class="noticias">
@@ -37,7 +45,7 @@
             <div class="portalNoticias">
                 <div class="noticia">
 
-                    <img class="imagenNoticias" src="./img/imagen3d2.jpg" alt="">
+                    <img class="imagenNoticias" src="./img/imagen3d2.jpg" alt="ejemplo de imagen">
                     <h4>Titulo</h4>
                     <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -48,7 +56,7 @@
                 </div>
                 <div class="noticia">
 
-                    <img class="imagenNoticias" src="./img/imagen3d2.jpg" alt="">
+                    <img class="imagenNoticias" src="./img/imagen3d2.jpg" alt="ejemplo de imagen">
                     <h4>Titulo</h4>
                     <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -59,15 +67,15 @@
                 </div>
                 <div class="noticiaAntigua">
                     <div class="noticiaA">
-                        <img class="imagenNoticias" src="./img/corpo.png" alt="">
+                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                     </div>
                     <div class="noticiaA">
-                        <img class="imagenNoticias" src="./img/corpo.png" alt="">
+                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                     </div>
                     <div class="noticiaA">
-                        <img class="imagenNoticias" src="./img/corpo.png" alt="">
+                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                     </div>
                 </div>
@@ -75,14 +83,14 @@
             <div class="noticiasFin"><button>Ver mas noticias</button></div>
         </section>
         <section class="portadaArticulos">
-            <div>
-                <h3>Ultimas Aportaciones</h3>
+            <div class="tooltipAportaciones">Ultimas Aportaciones
+                <span class="tooltipTexto">Ultimas Aportaciones de los Usuarios</span>
             </div>
             <div class="espacio"></div>
             <div class="portadaTendencias">
                 <div class="Producto">
                     <div class="productoEncabezado">
-                        <img id="iconoUsuarioTen" src="./img/usuario.png">
+                        <img src="./img/usuario.png" alt="ejemplo de imagen">
                         <p>Nombre de Usuario</p>
                     </div>
                     <div class="espacioProducto"></div>
@@ -94,7 +102,7 @@
                 </div>
                 <div class="Producto">
                     <div class="productoEncabezado">
-                        <img id="iconoUsuarioTen" src="./img/usuario.png">
+                        <img src="./img/usuario.png"  alt="ejemplo de imagen">
                         <p>Nombre de Usuario</p>
                     </div>
                     <div class="espacioProducto"></div>
@@ -106,7 +114,7 @@
                 </div>
                 <div class="Producto">
                     <div class="productoEncabezado">
-                        <img id="iconoUsuarioTen" src="./img/usuario.png">
+                        <img class="iconoUsuarioTen" src="./img/usuario.png"  alt="ejemplo de imagen">
                         <p>Nombre de Usuario</p>
                     </div>
                     <div class="espacioProducto"></div>
@@ -118,7 +126,7 @@
                 </div>
                 <div class="Producto">
                     <div class="productoEncabezado">
-                        <img id="iconoUsuarioTen" src="./img/usuario.png">
+                        <img class="iconoUsuarioTen" src="./img/usuario.png"  alt="ejemplo de imagen">
                         <p>Nombre de Usuario</p>
                     </div>
                     <div class="espacioProducto"></div>
@@ -138,11 +146,11 @@
         </section>
         <footer>
             <div>
-                <h2 id="imagenCorporativa">TTT</h2>
+                <h2 class="imagenCorporativa">TTT</h2>
             </div>
             <div>
-                <p id="titulos">@copyrigth Tres Tecnicas Tridimensionales </p>
-                <p id="titulos">TTT@corp.com</p>
+                <p class="titulos">@copyrigth Tres Tecnicas Tridimensionales </p>
+                <p class="titulos">TTT@corp.com</p>
             </div>
         </footer>
     </main>
