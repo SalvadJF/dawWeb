@@ -525,7 +525,6 @@ footer .titulos {
   min-width: auto;
   width: 200px;
   height: 200px;
-  padding: auto;
   margin-top: 20px ;
   border-radius: 10%;
   background-color: #ce3f3f;
@@ -651,24 +650,41 @@ footer .titulos {
   -webkit-background-clip: text;
 }
 
-.botonPago {
 
-  color: white;
+.botonPago {
+  position: relative;
+  margin-left: 20px;
   background-color: #d37b7b;
-  border-style: none;
-  padding: 15px 40px;
-  margin-top: 20px;
-  margin-left: 10px;
-  transition-property: width;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 1s;
+  border-radius: 5px;
+  box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+  padding: 15px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 154px;
+  height: 49px;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
 }
 
-.botonPago:hover {
+.botonPago::before {
+  content: "";
+  background-color: rgb(248, 50, 93);
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 700ms ease-in-out;
+  display: inline-block;
+}
 
-  background-color: #ce3f3f;
-  width: 300px;
+.botonPago:hover::before {
+  width: 100%;
 }
 
 /* Menu Lateral */
@@ -713,7 +729,7 @@ footer .titulos {
 }
 
 nav li span {
-  font-size: 1em;
+  font-size: 16px;
   text-decoration: none;
   line-height: 70px;
   padding: 15px 10px;
@@ -725,7 +741,8 @@ nav li span {
   cursor:pointer
 }
 
-nav li a:hover {
+nav li a:hover,
+nav li span:hover {
   background-color: #ce3f3f;
 }
 
