@@ -772,3 +772,12 @@ nav li span:hover {
 .tooltipAportaciones:hover .tooltipTexto {
   visibility: visible;
 }
+
+/* Tutoriales.html */
+
+.videoTutorial {
+  text-align: left;
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+}
