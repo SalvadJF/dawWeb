@@ -773,6 +773,18 @@ nav li span:hover {
   visibility: visible;
 }
 
+/* Licencia CC */ 
+.licenciaCC {
+  display: flex;
+  text-align: left;
+  margin-left: 20px;
+
+}
+
+.licenciaCC img {
+  width: 100px;
+  height: 40px;
+}
 /* Tutoriales.html */
 
 .videoTutorial {
