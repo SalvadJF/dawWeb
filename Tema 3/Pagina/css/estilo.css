@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", Arial, Tahoma, sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -88,7 +89,8 @@ section {
 }
 
 .portada {
-  display: flex;
+  padding-top: 200px;
+  display: flexbox;
   align-items: center;
   justify-content: flex-start;
   border-bottom: solid 4px yellow;
@@ -127,6 +129,7 @@ section {
   -webkit-text-stroke: 4px black;
   text-align: left;
   margin-left: 50px;
+  margin-top: 50px;
 }
 
 .portada .titulos {
@@ -136,6 +139,8 @@ section {
   font-size: 50px;
   -webkit-background-clip: text;
   -webkit-text-stroke: 2px black;
+  margin-left: 30px;
+  margin-top: 50px;
 }
 
 /* Noticias */
@@ -346,6 +351,16 @@ p {
   justify-content: center;
   align-items: center;
   height: 200px;
+}
+
+.botonesTendencias p {
+  background: linear-gradient(to left, #d37b7b, #ce3f3f);
+  color: transparent;
+  font-size: 30px;
+  -webkit-background-clip: text;
+}
+.botonesTendencias a {
+  color: white;
 }
 
 .boton4,
@@ -775,21 +790,58 @@ nav li span:hover {
 
 /* Licencia CC */ 
 .licenciaCC {
-  display: flex;
+  flex: auto;
   text-align: left;
-  margin-left: 20px;
-
+  margin-left: 50px;
+  margin-top: -50px;
 }
 
-.licenciaCC img {
-  width: 100px;
-  height: 40px;
-}
 /* Tutoriales.html */
 
-.videoTutorial {
-  text-align: left;
-  width: 100%;
-  padding-top: 50px;
-  display: flex;
+.Tutoriales {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
+.Tutoriales h3 {
+  background: linear-gradient(to left, #d37b7b, #ce3f3f);
+  color: transparent;
+  font-size: 30px;
+  -webkit-background-clip: text;
+}
+
+.videoTutorial {
+  position: relative;
+  margin-top: 40px;
+  width: auto;
+  height: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.iframesTutorial {
+  position: relative;
+  padding-top: 40px ;
+  width: auto;
+  height: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.audioTutorial{
+  position: relative;
+  padding-top: 40px ;
+  width: auto;
+  height: auto;
+  max-width: 1000px;
+  margin: auto;
+}
+
+

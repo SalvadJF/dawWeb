@@ -30,15 +30,30 @@
         </nav>
     </header>
     <main>
-        <section class="videoTutorial">
+        <section class="Tutoriales">
             <!-- Etiqueta Video -->
-            <video src="video.mp4" none muted controls></video>
-
+            <div class="videoTutorial">
+                <h3>Video</h3>
+                <video class="video" poster="./img/poster.jpg" controls preload="none" width="100%">
+                  <source src="./multimedia/video.mp4" type="video/mp4">
+                </video>
+              </div>
             <!-- Videos Incrustado-->
+            <div class="iframesTutorial">
+                <h3>Youtube</h3>
+                <iframe class="iframe" width="100%" height="500px" src="https://www.youtube.com/embed/0IMb9EO0d9I?si=-Cd5Ehs0uyuzuDw5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="iframe" width="100%" height="500px"  src="https://www.youtube.com/embed/O-tV7uBf5LI?si=hPEYEWFCeWvkRo9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
             
-        </section>
-        <section  class="audioTutorial">
-            <audio src="" muted controls loop preload="none"></audio>
+            <!-- Audio -->
+            <div class="audioTutorial">
+                <h3>Audio Tutorial</h3>
+                <audio class="audio" controls preload="none">
+                  <source src="./multimedia/audio.mp3" type="audio/mp3">
+                </audio>
+                <h3>Audio Ambiente</h3>
+                <audio class="audio" controls autoplay="true" loop volume="0.2" src="./multimedia/audioAmbiental.mp3" type="audio/mp3"></audio>
+              </div>
         </section>
     </main>
     <footer>
