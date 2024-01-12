@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Salvador Jimenez Fernandez 2ºDAW</title>
     <link rel="stylesheet" href="./css/estilo.css">
-    <script src="./js/ttt.js"></script>
+    <script src="./js/ttt.js" defer></script>
 </head>
 
 <body>
@@ -34,40 +34,34 @@
             <!-- Etiqueta Video -->
             <div class="acordeon">
                 <div class="bloque">
-                    <h3 class="tituloAco">Video</h3>
+                    <h1 class="tituloAco">Video</h1>
                     <div class="contenido">
-                        <div class="videoTutorial">
                             <video class="video" poster="./img/poster.jpg" controls preload="none" width="100%">
                             <source src="./multimedia/video.mp4" type="video/mp4">
                             </video>
-                        </div>
                     </div>
                 </div>
                 <!-- Videos Incrustado-->
                 <div class="bloque">
-                    <h3>Youtube</h3>
+                    <h1 class="tituloAco">Youtube</h1>
                     <div class="contenido">
-                        <div class="iframesTutorial">
-                            <iframe class="iframe" width="100%" height="500px" src="https://www.youtube.com/embed/0IMb9EO0d9I?si=-Cd5Ehs0uyuzuDw5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <iframe class="iframe" width="100%" height="500px"  src="https://www.youtube.com/embed/O-tV7uBf5LI?si=hPEYEWFCeWvkRo9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+                            <iframe class="iframe"  src="https://www.youtube.com/embed/0IMb9EO0d9I?si=-Cd5Ehs0uyuzuDw5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="iframe" "  src="https://www.youtube.com/embed/O-tV7uBf5LI?si=hPEYEWFCeWvkRo9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
                 <!-- Audio -->
                 <div class="bloque">
-                    <h3>Audio Tutorial</h3>
+                    <h1 class="tituloAco">Audio Tutorial</h1>
                     <div class="contenido">
-                        <div class="audioTutorial">
                             <audio class="audio" controls preload="none">
                             <source src="./multimedia/audio.mp3" type="audio/mp3">
                             </audio>
-                        </div>
                     </div>
-                    <h3>Audio Ambiente</h3>
+                </div>
+                <div class="bloque">
+                    <h1 class="tituloAco">Audio Ambiente</h1>
                     <div class="contenido">
-                        <div class="audioTutorial">
                             <audio class="audio" controls autoplay="true" loop volume="0.2" src="./multimedia/audioAmbiental.mp3" type="audio/mp3"></audio>
-                        </div>
                     </div>
                 </div>
             </div>
