@@ -812,12 +812,47 @@ nav li span:hover {
 
 /* Contenido Interactivo */
 
+/* Imagenes Adaptables */
+
+.imgAdaptable {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 5em;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.imgAdaptable picture {
+  flex: 1;
+  margin: auto;
+  
+}
+
+.imgAdaptable picture source {
+  width: 90%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.imgAdaptable picture img {
+  width: 70%;
+  max-width: 1024px;
+  object-fit: contain;
+  margin: auto;
+  border-radius: 10%;
+  border: 6px solid rgba(227, 119, 119, 0.7);
+}
+
+
 /* Acordeon */
 
 .acordeon {
   background-color: rgba(133, 133, 133, 0.25);
   width: 90%;
-  max-width: 1024px;
+  max-width: 800px;
   padding: 2em;
   margin: auto;
   border-radius: 10%;
