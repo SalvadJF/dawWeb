@@ -894,3 +894,97 @@ nav li span:hover {
 }
 
 /* Tabs */
+
+/* LightBox */ 
+
+.ul {
+  width: 80%;
+  max-width: 120em;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  gap: 1em;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.ul .li {
+  background: orange;
+  overflow: hidden;
+  padding: 2em;
+  align-items: center;
+  text-align: center;
+}
+
+.ul .li:hover .img {
+  transform: scale(1);
+}
+
+.ul .img {
+  height: 15vh;
+  width: calc(100% / 4 -2em);
+  transition: all 1s ease;
+  transform: translateX(0%);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 2;
+  display: none;
+  margin: auto;
+  padding: auto;
+}
+
+.lightbox .cerrar {
+  width: 5em;
+  height: 3em;
+  background: orange;
+  margin: 0 0 1em;
+}
+
+.lightbox .grande {
+  width: 50%;
+  height: 80%;
+  transition: all .5s ease;
+  margin: auto;
+  padding: auto;
+}
+
+.lightbox.activo {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Corrousel */
+
+.puntos {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: .4em;
+  margin: 1em 0;
+  list-style: none;
+}
+
+.punto {
+  width: 2em;
+  height: 2em;
+  background-color: blue;
+  margin: 1em;
+  border-radius: 50%;
+}
+
+.punto.activo {
+  background-color: orange;
+}

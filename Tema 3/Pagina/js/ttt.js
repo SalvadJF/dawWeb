@@ -6,6 +6,8 @@ function cerrarNav() {
     document.getElementById("navegadorLateral").style.width = "0";
   }
 
+/* Acordeon */
+
 const bloque = document.querySelectorAll('.bloque')
 const titulo = document.querySelectorAll('.tituloAco')
 
@@ -26,3 +28,49 @@ titulo.forEach(( cadaTitulo, i) => {
     bloque[i].classList.add('activo')
   })
 })
+
+/* LightBox */
+
+// Cuando hacemos click en una imagen pequeña el lightbox cambia a activo
+// Y la imgen en grande sera la clickeada
+
+const enlaces = document.querySelectorAll('.ul .a')
+const lightbox = document.querySelector('.lightbox')
+const grande = document.querySelector('.grande')
+const cerrar = document.querySelector('.cerrar')
+
+enlaces.forEach(( cadaEnlace , i ) =>{
+  enlaces[i].addEventListener('click', (e)=>{
+    e.preventDefault()
+    let ruta = cadaEnlace.querySelector('.img').src  
+
+    lightbox.classList.add('activo')
+    grande.setAttribute('src', ruta)
+  })
+})
+
+cerrar.addEventListener('click', ()=>{
+  lightbox.classList.remove('activo')
+  grande.setAttribute('src', '')
+})
+
+/* Carrousel */ 
+
+/* Carrousel */ 
+
+const puntos = document.querySelectorAll('.punto');
+const imagenes = document.querySelector('.ul');
+
+puntos.forEach((cadaPunto, i) => {
+  puntos[i].addEventListener('click', () => {
+    let posicion = i;
+    let operacion = posicion * -50;
+
+    imagenes.style.transform = `translateX(${operacion}%)`; // Fix here
+
+    puntos.forEach((cadaPunto, j) => {
+      puntos[j].classList.remove('activo');
+    });
+    puntos[i].classList.add('activo');
+  });
+});
