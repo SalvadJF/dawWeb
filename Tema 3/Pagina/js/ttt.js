@@ -54,7 +54,6 @@ cerrar.addEventListener('click', ()=>{
   grande.setAttribute('src', '')
 })
 
-/* Carrousel */ 
 
 /* Carrousel */ 
 
@@ -66,7 +65,7 @@ puntos.forEach((cadaPunto, i) => {
     let posicion = i;
     let operacion = posicion * -50;
 
-    imagenes.style.transform = `translateX(${operacion}%)`; // Fix here
+    imagenes.style.transform = `translateX(${operacion}%)`;
 
     puntos.forEach((cadaPunto, j) => {
       puntos[j].classList.remove('activo');
@@ -74,3 +73,20 @@ puntos.forEach((cadaPunto, i) => {
     puntos[i].classList.add('activo');
   });
 });
+
+/* Tabs */
+
+const liT = document.querySelectorAll('.liT')
+const bloqueT = document.querySelectorAll('.bloqueT')
+
+  liT.forEach((cadaLiT, i) => {
+    liT[i].addEventListener('click', () => {
+      liT.forEach((cadaLiT, i) => {
+        liT[i].classList.remove('activo')
+        bloqueT[i].classList.remove('activo')
+      })
+
+      liT[i].classList.add('activo')
+      bloqueT[i].classList.add('activo')
+    })
+  })

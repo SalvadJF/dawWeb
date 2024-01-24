@@ -995,16 +995,17 @@ nav li span:hover {
   max-width: 120em;
   background-color: lightcyan;
   padding: 1em;
+  margin: auto;
 }
 
 .tabs .ulT{
   width: 100%;
   background-color: lightblue;
   display: flex;
-  flex-wrap: row nowrap;
   justify-content: flex-start;
   align-items: center;
   list-style: none;
+  margin: auto;
 }
 
 .tabs .liT{
@@ -1026,8 +1027,7 @@ nav li span:hover {
   min-height: 10vh;
 }
 
-.tabs .bloque{
-  background-color: lightseagreen;
+.tabs .bloqueT{
   margin: 1em;
   position: 1em;
   position: absolute;
@@ -1036,6 +1036,6 @@ nav li span:hover {
   transition: all .5s ease;
 }
 
-.tabs .bloque.activo{
+.tabs .bloqueT.activo{
   opacity: 1;
 }
