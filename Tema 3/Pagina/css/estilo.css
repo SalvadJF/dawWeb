@@ -896,20 +896,25 @@ nav li span:hover {
 
 /* LightBox */ 
 
+.corrouselLightbox{
+  background-color:  rgba(0, 0, 0, .2);
+  border: 1px solid rgba(227, 119, 119, 0.7);
+  padding: 2em;
+  
+}
+
+
 .ul {
   width: 80%;
-  max-width: 120em;
-  background-color: lightgray;
   display: grid;
-  grid-template-columns: repeat(4 , 1fr);
+  grid-template-columns: repeat(8 , 1fr);
   gap: 1em;
   margin: auto;
   margin-top: 1em;
+  list-style: none;
 }
 
 .ul .li {
-  background: orange;
-  overflow: hidden;
   padding: 2em;
   align-items: center;
   text-align: center;
@@ -942,8 +947,9 @@ nav li span:hover {
 .lightbox .cerrar {
   width: 5em;
   height: 3em;
-  background: orange;
+  background: rgba(227, 119, 119, 0.7);
   margin: 0 0 1em;
+  color: white;
 }
 
 .lightbox .grande {
@@ -979,13 +985,13 @@ nav li span:hover {
 .punto {
   width: 2em;
   height: 2em;
-  background-color: blue;
+  background-color: rgba(227, 119, 119, 0.7);
   margin: 1em;
   border-radius: 50%;
 }
 
 .punto.activo {
-  background-color: orange;
+  background-color: yellow;
 }
 
 /* Tabs */
@@ -993,31 +999,35 @@ nav li span:hover {
 .tabs{
   width: 90%;
   max-width: 120em;
-  background-color: lightcyan;
   padding: 1em;
   margin: auto;
+  margin-top: 2em;
+  background-color: rgba(133, 133, 133, 0.25);
+  
 }
 
 .tabs .ulT{
   width: 100%;
-  background-color: lightblue;
+  background-color: rgba(0, 0, 0, .1);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   list-style: none;
   margin: auto;
+  border: 10%;
 }
 
 .tabs .liT{
-  background-color: lightgreen;
+  background-color: rgba(227, 119, 119, 0.7);
   padding: 1em;
   margin: 0 2em 0 0;
   transition: all .5 ease;
+  border-radius: 10%;
 }
 
 .tabs .liT.activo{
-  background-color: lightpink;
-  color: white;
+  background-color: lightgoldenrodyellow;
+  color: black;
 
 }
 
@@ -1025,6 +1035,8 @@ nav li span:hover {
   background-color: lightgoldenrodyellow;
   position: relative;
   min-height: 10vh;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 
 .tabs .bloqueT{
