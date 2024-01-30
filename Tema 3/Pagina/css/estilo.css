@@ -903,7 +903,6 @@ nav li span:hover {
   
 }
 
-
 .ul {
   width: 80%;
   display: grid;
@@ -995,7 +994,6 @@ nav li span:hover {
 }
 
 /* Tabs */
-
 .tabs{
   width: 90%;
   max-width: 120em;
@@ -1016,6 +1014,7 @@ nav li span:hover {
   margin: auto;
   border: 10%;
 }
+
 
 .tabs .liT{
   background-color: rgba(227, 119, 119, 0.7);
