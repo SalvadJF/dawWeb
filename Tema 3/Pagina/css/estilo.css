@@ -320,7 +320,7 @@ p {
 }
 
 .portadaTendencias .cuadradoGris {
-  background-color: #888;
+  background-color: #616161;
   color: #fff;
   padding: 10px;
   border-radius: 20px;
@@ -405,7 +405,7 @@ p {
 }
 
 footer {
-  background-color: #3a3a3a;
+  background-color: #525252b4;
   border-top: solid 5px #d15d5d;
   text-align: center;
   width: 100%;
