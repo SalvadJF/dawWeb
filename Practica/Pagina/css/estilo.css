@@ -303,7 +303,7 @@ p {
 .cuadradoGris {
   width: 40px;
   height: 20px;
-  background-color: #ccc;
+  background-color: #77767b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -449,10 +449,8 @@ footer .titulos {
 
 .textoContacto p:first-child{
 
-    background: linear-gradient(to left, #d37b7b, #ce3f3f);
-    color: transparent;
+    color: #f66151;
     font-size: 40px;
-    -webkit-background-clip: text;
 }
 
 .imagenesContacto {
@@ -571,7 +569,7 @@ footer .titulos {
 .botonesArticulo .cuadradoGris {
 
   flex: 1;
-  background-color: #888;
+  background-color: #77767b;
   color: #fff;
   text-align: center;
   padding: 20px 20px;
@@ -618,10 +616,8 @@ footer .titulos {
 
 .textoArticulo p:first-child{
 
-  background: linear-gradient(to left, #d37b7b, #ce3f3f);
-  color: transparent;
+  color: #f66151;
   font-size: 30px;
-  -webkit-background-clip: text;
 }
 
 .autorArticulo {
@@ -660,10 +656,8 @@ footer .titulos {
 
 .pagoArticulo p{
 
-  background: linear-gradient(to left, #a51010, #ce3f3f);
-  color: transparent;
+  color: #f66151;
   font-size: 30px;
-  -webkit-background-clip: text;
 }
 
 
@@ -808,6 +802,7 @@ nav li span:hover {
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px;
+  color: lightyellow;
 }
 
 
@@ -824,6 +819,7 @@ nav li span:hover {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+  color: white;
 }
 
 .imgAdaptable picture {
@@ -858,11 +854,12 @@ nav li span:hover {
   margin: auto;
   border-radius: 10%;
   display: flexbox;
+  cursor: pointer;
   
 }
 
 .acordeon .bloque{
-  background-color: rgba(227, 119, 119, 0.7);
+  background-color: #a51d2d;
   margin: auto;
   margin-top: 1em;
   padding: 1em;
@@ -873,7 +870,7 @@ nav li span:hover {
 
 .acordeon .tituloAco{
   margin: 0 0 1em;
-  color: darkorange;
+  color: #f6f5f4;
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: black;
 }
@@ -901,6 +898,7 @@ nav li span:hover {
   background-color:  rgba(0, 0, 0, .2);
   border: 1px solid rgba(227, 119, 119, 0.7);
   padding: 2em;
+  color: #f6f5f4;
   
 }
 
@@ -918,6 +916,11 @@ nav li span:hover {
   padding: 2em;
   align-items: center;
   text-align: center;
+  color: #f6f5f4;
+}
+
+.ul a {
+  color: #f6f5f4;
 }
 
 .ul .li:hover .img {
@@ -942,6 +945,7 @@ nav li span:hover {
   display: none;
   margin: auto;
   padding: auto;
+  color: #f6f5f4;
 }
 
 .lightbox .cerrar {
@@ -991,7 +995,7 @@ nav li span:hover {
 }
 
 .punto.activo {
-  background-color: yellow;
+  background-color: lightgoldenrodyellow;
 }
 
 /* Tabs */
@@ -1014,15 +1018,17 @@ nav li span:hover {
   list-style: none;
   margin: auto;
   border: 10%;
+  color: #241f31;
 }
 
 
 .tabs .liT{
-  background-color: rgba(227, 119, 119, 0.7);
+  background-color: #a51d2d;
   padding: 1em;
   margin: 0 2em 0 0;
   transition: all .5 ease;
   border-radius: 10%;
+  color: #f6f5f4;
 }
 
 .tabs .liT.activo{
@@ -1032,7 +1038,7 @@ nav li span:hover {
 }
 
 .tabs .subcontenedor{
-  background-color: lightgoldenrodyellow;
+  background-color: #a51d2d;
   position: relative;
   min-height: 10vh;
   border-bottom-left-radius: 20%;
@@ -1046,8 +1052,20 @@ nav li span:hover {
   top: 1em;
   opacity: 0;
   transition: all .5s ease;
+  color: #241f31;
 }
 
 .tabs .bloqueT.activo{
   opacity: 1;
+  color: #241f31;
+}
+
+.links:link {
+  color: #f8e45c;
+  text-decoration: underline;
+}
+
+.links:visited {
+  color: #f8e45c;
+  text-decoration: underline;
 }
