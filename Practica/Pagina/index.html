@@ -12,24 +12,25 @@
 <body>
     <header>
         <nav>
-            <a class="imagenCorpNav" href="index.html">TTT</a>
+            <a class="imagenCorpNav" href="index.html" role="banner">TTT</a>
             <ul>
-                <li><a href="#"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="articulo.html">Articulo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><span onclick="abrirNav()">&#9776;</span></li>
+                <li><a href="#" role="navigation"><img src="./img/usuario.png" alt="icono del usuario" ></a></li>
+                <li><a href="index.html" role="navigation">Inicio</a></li>
+                <li><a href="articulo.html" role="navigation">Articulo</a></li>
+                <li><a href="contacto.html" role="navigation">Contacto</a></li>
+                <li><span onclick="abrirNav()" role="navigation">&#9776;</span></li>
             </ul>
             <div id="navegadorLateral" class="menuLateral">
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                <a href="index.html">Inicio</a>
-                <a href="articulo.html">Articulo</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="tutoriales.html">Tutoriales</a>
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" role="navigation">&times;</a>
+                <a href="index.html" role="navigation">Inicio</a>
+                <a href="articulo.html" role="navigation">Articulo</a>
+                <a href="contacto.html" role="navigation">Contacto</a>
+                <a href="tutoriales.html" role="navigation">Tutoriales</a>
+                <a href="formulario.html" role="navigation">Formulario</a>
             </div>
         </nav>
     </header>
-    <main>
+    <main role="main">
         <section class="portada">
             <div>
                 <h2 class="imagenCorporativa">TTT</h2>
@@ -230,7 +231,7 @@
                 <button class="botonPago"><a href="tutoriales.html">Tutoriales</a></button>
             </div>
         </section>
-        <footer>
+        <footer role="contentinfo">
             <div>
                 <h2 class="imagenCorporativa">TTT</h2>
             </div>

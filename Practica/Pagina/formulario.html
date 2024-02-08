@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Salvador Jimenez Fernandez 2ºDAW</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/ttt.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="imagenCorpNav" href="index.html" role="banner">TTT</a>
+            <ul>
+                <li><a href="#" role="navigation"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
+                <li><a href="index.html" role="navigation">Inicio</a></li>
+                <li><a href="articulo.html" role="navigation">Articulo</a></li>
+                <li><a href="contacto.html" role="navigation">Contacto</a></li>
+                <li><span onclick="abrirNav()" role="navigation">&#9776;</span></li>
+            </ul>
+            <div id="navegadorLateral" class="menuLateral">
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" role="navigation">&times;</a>
+                <a href="index.html" role="navigation">Inicio</a>
+                <a href="articulo.html" role="navigation">Articulo</a>
+                <a href="contacto.html" role="navigation">Contacto</a>
+                <a href="tutoriales.html" role="navigation">Tutoriales</a>
+                <a href="formulario.html" role="navigation">Formulario</a>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="mainFormulario">
+        <section class="camposFormulario">
+            <div class="decoracion"></div>
+            <div class="formulario">
+                <h3>Registrate</h3>
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos">
+                    <label for="fnac">Fecha de Nacimiento</label>
+                    <input type="date" name="fnac" id="fnac">
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo">
+                    <label for="contra">Contraseña</label>
+                    <input type="password" name="contra" id="contra">
+                    <label for="contraC">Confirma la Contraseña</label>
+                    <input type="password" name="contraC" id="contraC">
+                    <input type="submit" name="enviar" id="enviar" value="Enviar" class="inputBoton">
+                </form>
+            </div>
+    </section>
+        
+    </main>
+    <footer role="contentinfo">
+        <div>
+            <h2 class="imagenCorporativa">TTT</h2>
+        </div>
+        <div>
+            <p class="titulos">@copyrigth Tres Tecnicas Tridimensionales </p>
+            <p class="titulos">TTT@corp.com</p>
+        </div>
+    </footer>
+    </main>
+
+</body>
+
+</html>

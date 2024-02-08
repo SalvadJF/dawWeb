@@ -1069,3 +1069,75 @@ nav li span:hover {
   color: #f8e45c;
   text-decoration: underline;
 }
+
+/* Formulario */
+
+.mainFormulario {
+  display: flex;
+  width: 100%;
+  max-width: 2048px;
+  height: 100%;
+  max-height: 1200px;
+  margin: auto;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.camposFormulario {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+
+.decoracion {
+  flex: 2;
+  background-image: url(.././img/fondoFormulario.webp);
+  background-repeat: no-repeat round;
+  border-radius: 5%;
+}
+
+.formulario {
+  flex: 0.5;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10%;
+  width: 70%;
+  height: 70%;
+  margin-left: -60em;
+  color: white;
+  -webkit-text-stroke: 0.2px black;
+  font-size: 1.2em;
+
+}
+
+.formulario h3 {
+  text-align: center;
+  color: #a51d2d;
+  margin: auto;
+  margin-top: 2em;
+  font-size: xx-large;
+  -webkit-text-stroke: 1px black;
+}
+
+.formulario form{
+  margin: auto;
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+  justify-content: center;
+}
+
+.formulario form input {
+  text-align: center;
+}
+
+.inputBoton {
+  width: 50%;
+  margin: auto;
+}
