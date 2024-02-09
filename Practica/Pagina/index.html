@@ -11,22 +11,22 @@
 
 <body>
     <header>
-        <nav>
+        <nav role="navigation">
             <a class="imagenCorpNav" href="index.html" role="banner">TTT</a>
             <ul>
-                <li><a href="#" role="navigation"><img src="./img/usuario.png" alt="icono del usuario" ></a></li>
-                <li><a href="index.html" role="navigation">Inicio</a></li>
-                <li><a href="articulo.html" role="navigation">Articulo</a></li>
-                <li><a href="contacto.html" role="navigation">Contacto</a></li>
-                <li><span onclick="abrirNav()" role="navigation">&#9776;</span></li>
+                <li><a href="#" ><img src="./img/usuario.png" alt="icono del usuario" ></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulo.html">Articulo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><span onclick="abrirNav()" aria-label="Menu" role="button">&#9776;</span></li>
             </ul>
             <div id="navegadorLateral" class="menuLateral">
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" role="navigation">&times;</a>
-                <a href="index.html" role="navigation">Inicio</a>
-                <a href="articulo.html" role="navigation">Articulo</a>
-                <a href="contacto.html" role="navigation">Contacto</a>
-                <a href="tutoriales.html" role="navigation">Tutoriales</a>
-                <a href="formulario.html" role="navigation">Formulario</a>
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" >&times;</a>
+                <a href="index.html">Inicio</a>
+                <a href="articulo.html">Articulo</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="tutoriales.html">Tutoriales</a>
+                <a href="formulario.html">Formulario</a>
             </div>
         </nav>
     </header>
@@ -128,7 +128,7 @@
             <div class="portalNoticias">
                 <div class="noticia">
 
-                    <img class="imagenNoticias" src="./img/imagenNoticia1.jpg" alt="ejemplo de imagen">
+                    <img class="imagenNoticias" src="./img/imagenNoticia1.jpg" alt="ejemplo de imagen 1">
                     <h4>Titulo</h4>
                     <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -139,7 +139,7 @@
                 </div>
                 <div class="noticia">
 
-                    <img class="imagenNoticias" src="./img/imagenNoticia2.jpg" alt="ejemplo de imagen">
+                    <img class="imagenNoticias" src="./img/imagenNoticia2.jpg" alt="ejemplo de imagen 2">
                     <h4>Titulo</h4>
                     <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -150,15 +150,15 @@
                 </div>
                 <div class="noticiaAntigua">
                     <div class="noticiaA">
-                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen">
+                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen A1">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                     </div>
                     <div class="noticiaA">
-                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen">
+                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen A2">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                     </div>
                     <div class="noticiaA">
-                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen">
+                        <img class="imagenNoticias" src="./img/corpo.png" alt="ejemplo de imagen A3">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                     </div>
                 </div>
@@ -178,9 +178,9 @@
                     </div>
                     <div class="espacioProducto"></div>
                     <div class="productoPie">
-                        <div class="Likes"><button></button></div>
+                        <div class="Likes" role="button"><button></button></div>
                         <div class="cuadradoGris">Visitas</div>
-                        <div class="Favoritos"><button></button></div>
+                        <div class="Favoritos" role="button"><button></button></div>
                     </div>
                 </div>
                 <div class="Producto">
@@ -190,9 +190,9 @@
                     </div>
                     <div class="espacioProducto"></div>
                     <div class="productoPie">
-                        <div class="Likes"><button></button></div>
-                        <div class="cuadradoGris">Visitas</div>
-                        <div class="Favoritos"><button></button></div>
+                        <div class="Likes" role="button"><button></button></div>
+                        <div class="cuadradoGris" role="button">Visitas</div>
+                        <div class="Favoritos" role="button"><button></button></div>
                     </div>
                 </div>
                 <div class="Producto">
@@ -202,9 +202,9 @@
                     </div>
                     <div class="espacioProducto"></div>
                     <div class="productoPie">
-                        <div class="Likes"><button></button></div>
-                        <div class="cuadradoGris">Visitas</div>
-                        <div class="Favoritos"><button></button></div>
+                        <div class="Likes" role="button"><button></button></div>
+                        <div class="cuadradoGris" role="button">Visitas</div>
+                        <div class="Favoritos" role="button"><button></button></div>
                     </div>
                 </div>
                 <div class="Producto">
@@ -214,9 +214,9 @@
                     </div>
                     <div class="espacioProducto"></div>
                     <div class="productoPie">
-                        <div class="Likes"><button></button></div>
-                        <div class="cuadradoGris">Visitas</div>
-                        <div class="Favoritos"><button></button></div>
+                        <div class="Likes" role="button"><button></button></div>
+                        <div class="cuadradoGris" role="button">Visitas</div>
+                        <div class="Favoritos" role="button"><button></button></div>
                     </div>
                 </div>
             </div>
@@ -228,7 +228,7 @@
             </div>
             <div class="botonesTendencias">
                 <p>¿No sabes y quieres empezar?</p>
-                <button class="botonPago"><a href="tutoriales.html">Tutoriales</a></button>
+                <button class="botonPago"><a href="tutoriales.html" role="button">Tutoriales</a></button>
             </div>
         </section>
         <footer role="contentinfo">
