@@ -12,40 +12,44 @@
 <body>
     <header>
         <nav>
-            <a class="imagenCorpNav" href="index.html">TTT</a>
+            <a class="imagenCorpNav" href="index.html" role="banner">TTT</a>
             <ul>
-                <li><a href="#"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="articulo.html">Articulo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><span onclick="abrirNav()">&#9776;</span></li>
+                <li><a href="#" role="navigation"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
+                <li><a href="index.html" role="navigation">Inicio</a></li>
+                <li><a href="articulo.html" role="navigation">Articulo</a></li>
+                <li><a href="contacto.html" role="navigation">Contacto</a></li>
+                <li><span onclick="abrirNav()" aria-expanded="false" aria-controls="navegadorLateral" aria-label="Abrir menú">&#9776;</span></li>
             </ul>
-            <div id="navegadorLateral" class="menuLateral">
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                <a href="index.html">Inicio</a>
-                <a href="articulo.html">Articulo</a>
-                <a href="contacto.html">Contacto</a></li>
-                <a href="tutoriales.html">Tutoriales</a>
+            <div id="navegadorLateral" class="menuLateral" role="navigation" aria-label="Menú de navegación" aria-hidden="true">
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" role="button" aria-label="Cerrar menú">&times;</a>
+                <a href="index.html" role="navigation">Inicio</a>
+                <a href="articulo.html" role="navigation">Articulo</a>
+                <a href="contacto.html" role="navigation">Contacto</a>
+                <a href="tutoriales.html" role="navigation">Tutoriales</a>
+                <a href="formulario.html" role="navigation">Formulario</a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="imagenesArticulo">
-            <div class="imagenPrincipal"></div>
-            <div class="imagenSecundarias">
-                <div class="imagenSecundaria"></div>
-                <div class="imagenSecundaria"></div>
+        <section class="imagenesArticulo" role="region" aria-labelledby="imagenesArticuloTitle">
+            <h2 id="imagenesArticuloTitle" class="visually-hidden">Imágenes del Artículo</h2>
+            <div class="imagenPrincipal" role="img" aria-label="Imagen principal"></div>
+            <div class="imagenSecundarias" role="group" aria-labelledby="imagenSecundariasTitle">
+                <h3 id="imagenSecundariasTitle" class="visually-hidden">Imágenes secundarias</h3>
+                <div class="imagenSecundaria" role="img" aria-label="Imagen secundaria 1"></div>
+                <div class="imagenSecundaria" role="img" aria-label="Imagen secundaria 2"></div>
             </div>
         </section>
-        <div class="espacio"></div>
+        <div class="espacio" role="presentation"></div>
         <section class="informacionArticulo">
-            <div class="botonYtexto">
-                <div class="botonesArticulo">
-                    <div class="cuadradoGris">Visitas</div>
-                    <div class="Likes"><button></button></div>
-                    <div class="Favoritos"><button></button></div>
+            <div class="botonYtexto" role="group" aria-labelledby="botonYtextoTitle">
+                <h2 id="botonYtextoTitle" class="visually-hidden">Botones y Texto del Artículo</h2>
+                <div class="botonesArticulo" role="toolbar">
+                    <div class="cuadradoGris" role="button" tabindex="0">Visitas</div>
+                    <div class="Likes" role="button" tabindex="0"><button></button></div>
+                    <div class="Favoritos" role="button" tabindex="0"><button></button></div>
                 </div>
-                <div class="textoArticulo">
+                <div class="textoArticulo" role="article">
                     <p>| NOMBRE DEL PROYECTO </p>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et
@@ -56,8 +60,8 @@
                     </p>
                 </div>
             </div>
-            <div class="autorArticulo">
-                <img src="./img/usuario.png" alt="">
+            <div class="autorArticulo" role="complementary">
+                <img src="./img/usuario.png" alt="Imagen del autor">
                 <p>Autor</p>
             </div>
         </section>
@@ -66,7 +70,7 @@
             <button class="botonPago">Comprar</button>
         </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div>
             <h2 class="imagenCorporativa">TTT</h2>
         </div>

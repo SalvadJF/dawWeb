@@ -12,20 +12,21 @@
 <body>
     <header>
         <nav>
-            <a class="imagenCorpNav" href="index.html">TTT</a>
+            <a class="imagenCorpNav" href="index.html" role="banner">TTT</a>
             <ul>
-                <li><a href="#"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="articulo.html">Articulo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><span onclick="abrirNav()">&#9776;</span></li>
+                <li><a href="#" role="navigation"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
+                <li><a href="index.html" role="navigation">Inicio</a></li>
+                <li><a href="articulo.html" role="navigation">Articulo</a></li>
+                <li><a href="contacto.html" role="navigation">Contacto</a></li>
+                <li><span onclick="abrirNav()" aria-expanded="false" aria-controls="navegadorLateral" aria-label="Abrir menú">&#9776;</span></li>
             </ul>
-            <div id="navegadorLateral" class="menuLateral">
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                <a href="index.html">Inicio</a>
-                <a href="articulo.html">Articulo</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="tutoriales.html">Tutoriales</a>
+            <div id="navegadorLateral" class="menuLateral" role="navigation" aria-label="Menú de navegación" aria-hidden="true">
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" role="button" aria-label="Cerrar menú">&times;</a>
+                <a href="index.html" role="navigation">Inicio</a>
+                <a href="articulo.html" role="navigation">Articulo</a>
+                <a href="contacto.html" role="navigation">Contacto</a>
+                <a href="tutoriales.html" role="navigation">Tutoriales</a>
+                <a href="formulario.html" role="navigation">Formulario</a>
             </div>
         </nav>
     </header>
@@ -51,7 +52,7 @@
                 <li class="punto"></li>
             </ul>
 
-            <div class="lightbox">
+            <div class="lightbox" aria-hidden="true">
                 <img src="./img/1.png" alt="" class="grande">
                 <button class="cerrar">Cerrar</button>
             </div>
@@ -65,19 +66,17 @@
 
             <div class="subcontenedor">
                 <div class="bloqueT activo">
-                   
-                    <a class="links"  href="https://www.udemy.com/es/topic/3d-modeling/free/"> 
+                    <a class="links" href="https://www.udemy.com/es/topic/3d-modeling/free/" role="link" tabindex="0">
                         <h3>Udemy : Pagina de Cursos Relacionados con el modelaje 3D</h3>
                     </a>
                 </div>
                 <div class="bloqueT">
-                    <a class="links"  href="https://www.skillshare.com/es/browse/3d-texturing">
+                    <a class="links" href="https://www.skillshare.com/es/browse/3d-texturing" role="link" tabindex="-1">
                         <h3>Skill Share : Pagina donde profesionales imparten cursos variados</h3>
                     </a>
-                   
                 </div>
                 <div class="bloqueT">
-                    <a class="links" href="https://cei.es/cursos-video-vfx-motion-graphics/?gad_source=1&gclid=EAIaIQobChMIlOO94tL2gwMVfD4GAB3VAAI6EAAYASAAEgLWH_D_BwE">
+                    <a class="links" href="https://cei.es/cursos-video-vfx-motion-graphics/?gad_source=1&gclid=EAIaIQobChMIlOO94tL2gwMVfD4GAB3VAAI6EAAYASAAEgLWH_D_BwE" role="link" tabindex="-1">
                         <h3>CEI : Centro de Inovacion y diseño, dirigido a aprender sobre el campo digital</h3>
                     </a>
                 </div>
@@ -89,19 +88,19 @@
                 <div class="bloque">
                     <h1 class="tituloAco">Video</h1>
                     <div class="contenido">
-                            <video class="video" poster="./img/poster.jpg" controls preload="none" width="100%">
+                        <video class="video" poster="./img/poster.jpg" controls preload="none" width="100%">
                             <source src="./multimedia/video.mp4" type="video/mp4">
-                            </video>
+                        </video>
                     </div>
                 </div>
                 <!-- Videos Incrustado-->
                 <div class="bloque">
                     <h1 class="tituloAco">Youtube</h1>
                     <div class="contenido">
-                            <iframe class="iframe"  src="https://www.youtube.com/embed/0IMb9EO0d9I?si=-Cd5Ehs0uyuzuDw5" 
+                        <iframe class="iframe" src="https://www.youtube.com/embed/0IMb9EO0d9I?si=-Cd5Ehs0uyuzuDw5" 
                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                             encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <iframe class="iframe" "  src="https://www.youtube.com/embed/O-tV7uBf5LI?si=hPEYEWFCeWvkRo9q" 
+                        <iframe class="iframe" src="https://www.youtube.com/embed/O-tV7uBf5LI?si=hPEYEWFCeWvkRo9q" 
                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                             encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
@@ -110,21 +109,21 @@
                 <div class="bloque">
                     <h1 class="tituloAco">Audio Tutorial</h1>
                     <div class="contenido">
-                            <audio class="audio" controls preload="none">
+                        <audio class="audio" controls preload="none">
                             <source src="./multimedia/audio.mp3" type="audio/mp3">
-                            </audio>
+                        </audio>
                     </div>
                 </div>
                 <div class="bloque">
                     <h1 class="tituloAco">Audio Ambiente</h1>
                     <div class="contenido">
-                            <audio class="audio" controls loop volume="0.2" src="./multimedia/audioAmbiental.mp3" type="audio/mp3"></audio>
+                        <audio class="audio" controls loop volume="0.2" src="./multimedia/audioAmbiental.mp3" type="audio/mp3"></audio>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div>
             <h2 class="imagenCorporativa">TTT</h2>
         </div>

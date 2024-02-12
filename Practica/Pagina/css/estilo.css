@@ -96,7 +96,7 @@ section {
   border-bottom: solid 4px yellow;
   width: 100%;
   height: 600px;
-  background: linear-gradient(136deg, #000000, #d37b7b, #ce3f3f, #bfc00a ,#ffffff);
+  background: linear-gradient(136deg, #000000, #d37b7b, #973030, #96960c ,#ffffff);
   background-size: 800% 800%;
 
   -webkit-animation: AnimacionPortada 10s ease infinite;
@@ -1157,4 +1157,8 @@ nav li span:hover {
 .inputBoton {
   width: 50%;
   margin: auto;
+}
+
+.visually-hidden {
+  display: none;
 }

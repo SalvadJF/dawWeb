@@ -12,54 +12,54 @@
 <body>
     <header>
         <nav>
-            <a class="imagenCorpNav" href="index.html">TTT</a>
+            <a class="imagenCorpNav" href="index.html" role="banner">TTT</a>
             <ul>
-                <li><a href="#"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="articulo.html">Articulo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><span onclick="abrirNav()">&#9776;</span></li>
+                <li><a href="#" role="navigation"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
+                <li><a href="index.html" role="navigation">Inicio</a></li>
+                <li><a href="articulo.html" role="navigation">Articulo</a></li>
+                <li><a href="contacto.html" role="navigation">Contacto</a></li>
+                <li><span onclick="abrirNav()" aria-expanded="false" aria-controls="navegadorLateral" aria-label="Abrir menú">&#9776;</span></li>
             </ul>
-            <div id="navegadorLateral" class="menuLateral">
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                <a href="index.html">Inicio</a>
-                <a href="articulo.html">Articulo</a>
-                <a href="contacto.html">Contacto</a></li>
-                <a href="tutoriales.html">Tutoriales</a>
+            <div id="navegadorLateral" class="menuLateral" role="navigation" aria-label="Menú de navegación" aria-hidden="true">
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" role="button" aria-label="Cerrar menú">&times;</a>
+                <a href="index.html" role="navigation">Inicio</a>
+                <a href="articulo.html" role="navigation">Articulo</a>
+                <a href="contacto.html" role="navigation">Contacto</a>
+                <a href="tutoriales.html" role="navigation">Tutoriales</a>
+                <a href="formulario.html" role="navigation">Formulario</a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="espacio"></div>
+        <div class="espacio" role="presentation"></div>
         <section class="textoContacto">
-
-            <p>| Sobre nosotros : Tres Tecnicas Tridimensionales</p>
-            <div class="espacio"></div>
-            <p>
+            <p role="article">| Sobre nosotros : Tres Tecnicas Tridimensionales</p>
+            <div class="espacio" role="presentation"></div>
+            <p role="article">
                 Somos una pagina donde los artistas puedan compartir
                 libremente sus proyectos sin necesidad de intermediarios o redes sociales.
             </p>
-            <p>
-                Permitiendo asi una exposicion mayor para el artista y un catalogo mayor y mas facil deentender para el
-                cliente.</p>
+            <p role="article">
+                Permitiendo así una exposición mayor para el artista y un catálogo mayor y más fácil de entender para el cliente.
+            </p>
         </section>
-        <div class="espacio"></div>
-        <section class="imagenesContacto">
+        <div class="espacio" role="presentation"></div>
+        <section class="imagenesContacto" role="group">
             <div>
                 <img src="./img/crea.jpg" alt="">
-                <p>Crea</p>
+                <p role="article">Crea</p>
             </div>
             <div>
                 <img src="./img/comparte.jpeg" alt="">
-                <p>Comparte</p>
+                <p role="article">Comparte</p>
             </div>
             <div>
                 <img src="./img/dinero.jpg" alt="">
-                <p>Gana</p>
+                <p role="article">Gana</p>
             </div>
         </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div>
             <h2 class="imagenCorporativa">TTT</h2>
         </div>

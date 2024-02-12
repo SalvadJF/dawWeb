@@ -18,10 +18,10 @@
                 <li><a href="index.html" role="navigation">Inicio</a></li>
                 <li><a href="articulo.html" role="navigation">Articulo</a></li>
                 <li><a href="contacto.html" role="navigation">Contacto</a></li>
-                <li><span onclick="abrirNav()" role="navigation">&#9776;</span></li>
+                <li><span onclick="abrirNav()" role="button" aria-expanded="false" aria-controls="navegadorLateral">&#9776;</span></li>
             </ul>
-            <div id="navegadorLateral" class="menuLateral">
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" role="navigation">&times;</a>
+            <div id="navegadorLateral" class="menuLateral" role="navigation" aria-label="Menú de navegación">
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()" role="button">&times;</a>
                 <a href="index.html" role="navigation">Inicio</a>
                 <a href="articulo.html" role="navigation">Articulo</a>
                 <a href="contacto.html" role="navigation">Contacto</a>
@@ -36,25 +36,24 @@
             <div class="formulario">
                 <div class="espacioFormulario">
                     <h2>Registrate</h2>
-                    <form action="">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre">
-                        <label for="apellidos">Apellidos</label>
-                        <input type="text" name="apellidos" id="apellidos">
-                        <label for="fnac">Fecha de Nacimiento</label>
-                        <input type="date" name="fnac" id="fnac">
-                        <label for="correo">Email</label>
-                        <input type="email" name="correo" id="correo">
-                        <label for="contra">Contraseña</label>
-                        <input type="password" name="contra" id="contra">
-                        <label for="contraC">Confirma la Contraseña</label>
-                        <input type="password" name="contraC" id="contraC">
+                    <form action="" autocomplete="on" aria-autocomplete="both">
+                        <label for="nombre" id="nombre-label">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" aria-labelledby="nombre-label">
+                        <label for="apellidos" id="apellidos-label">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" aria-labelledby="apellidos-label">
+                        <label for="fnac" id="fnac-label">Fecha de Nacimiento</label>
+                        <input type="date" name="fnac" id="fnac" aria-labelledby="fnac-label">
+                        <label for="correo" id="correo-label">Email</label>
+                        <input type="email" name="correo" id="correo" aria-labelledby="correo-label">
+                        <label for="contra" id="contra-label">Contraseña</label>
+                        <input type="password" name="contra" id="contra" aria-labelledby="contra-label">
+                        <label for="contraC" id="contraC-label">Confirma la Contraseña</label>
+                        <input type="password" name="contraC" id="contraC" aria-labelledby="contraC-label">
                         <input type="submit" name="enviar" id="enviar" value="Enviar" class="inputBoton">
                     </form>
                 </div>
             </div>
-    </section>
-        
+        </section>
     </main>
     <footer role="contentinfo">
         <div>
@@ -65,8 +64,6 @@
             <p class="titulos">TTT@corp.com</p>
         </div>
     </footer>
-    </main>
-
 </body>
 
 </html>
