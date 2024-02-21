@@ -22,17 +22,6 @@ nav {
   margin: 0 auto;
 }
 
-nav button {
-  font-size: 1em; 
-  height: 70px; 
-  width: 100px;
-  padding: 10px 10px;
-  color: black;
-  background-color: white;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
 .imagenCorpNav {
   font-family: geostar;
   font-size: 50px;
