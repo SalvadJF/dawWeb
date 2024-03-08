@@ -14,6 +14,9 @@
         <nav>
             <a class="imagenCorpNav" href="index.html" role="banner">TTT</a>
             <ul>
+                <div class="barraBusqueda">
+                    <li><img src="./img/lupa.svg" alt="icono de lupa"><input type="search" name="buscar" id="buscar" placeholder="Mira las aportaciones de $usuario!"></li>
+                </div>
                 <li><a href="#" role="navigation"><img src="./img/usuario.png" alt="icono del usuario"></a></li>
                 <li><a href="index.html" role="navigation">Inicio</a></li>
                 <li><a href="articulo.html" role="navigation">Articulo</a></li>
@@ -38,17 +41,21 @@
                     <h2>Registrate</h2>
                     <form action="" autocomplete="on" aria-autocomplete="both">
                         <label for="nombre" id="nombre-label">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" aria-labelledby="nombre-label">
+                        <input type="text" name="nombre" id="nombre" aria-labelledby="nombre-label" placeholder="Introduzca su Nombre">
                         <label for="apellidos" id="apellidos-label">Apellidos</label>
-                        <input type="text" name="apellidos" id="apellidos" aria-labelledby="apellidos-label">
+                        <input type="text" name="apellidos" id="apellidos" aria-labelledby="apellidos-label" placeholder="Introduzca sus Apellidos">
                         <label for="fnac" id="fnac-label">Fecha de Nacimiento</label>
-                        <input type="date" name="fnac" id="fnac" aria-labelledby="fnac-label">
+                        <input type="date" name="fnac" id="fnac" aria-labelledby="fnac-label" placeholder="dd/mm/aaaa">
                         <label for="correo" id="correo-label">Email</label>
-                        <input type="email" name="correo" id="correo" aria-labelledby="correo-label">
+                        <input type="email" name="correo" id="correo" aria-labelledby="correo-label" placeholder="Introduzca su Email">
                         <label for="contra" id="contra-label">Contraseña</label>
-                        <input type="password" name="contra" id="contra" aria-labelledby="contra-label">
+                        <input type="password" name="contra" id="contra" aria-labelledby="contra-label" placeholder="Introduzca su Contraseña">
                         <label for="contraC" id="contraC-label">Confirma la Contraseña</label>
-                        <input type="password" name="contraC" id="contraC" aria-labelledby="contraC-label">
+                        <input type="password" name="contraC" id="contraC" aria-labelledby="contraC-label" placeholder="Repita la Contraseña">
+                        <div class="check">
+                            <input type="checkbox" name="recordarme" id="recordar" aria-labelledby="recordar-label">
+                            <label for="recordar" id="recordarme-label">Recordarme</label>
+                        </div>
                         <input type="submit" name="enviar" id="enviar" value="Enviar" class="inputBoton">
                     </form>
                 </div>
